@@ -1,0 +1,222 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgba(227, 216, 200, 0.8);
+        @font-face{
+            font-family:"elephant-regular";
+            src:url("https://dafonttop.com/wp-data/e/894/9894/file/Elephant-PersonalUse.otf") format("woff"),
+            url("https://dafonttop.com/wp-data/e/894/9894/file/Elephant-PersonalUse.otf") format("opentype"),
+            url("https://dafonttop.com/wp-data/e/894/9894/file/Elephant-PersonalUse.otf") format("truetype");
+        }
+        span.font0{font-family:"elephant-regular";font-size:55px;text-transform:none;}
+}
+h1{
+    font-size:8vw;
+}
+.page-1{
+    padding-top: 67px;;
+    padding-bottom: 140px;
+    .header{
+        padding-bottom: 42px;
+        .menu{
+            align-items: center;
+            ul{
+                justify-content: flex-end;
+                padding: 0;
+                margin-left: auto;
+                margin: 0;
+                display: flex;
+                flex-direction: row;
+                text-decoration: none;
+                list-style-type: none;
+                list-style: none;
+                li{
+
+                    margin-right: 69px;
+                    
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                    }
+                    
+                    #work{
+                        font-family: SF Pro Display;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 32px;
+                        line-height: 38px;
+                        color: #FFFFFF;
+                    }
+                    #about{
+                        font-family: SF Pro Display;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 32px;
+                        line-height: 38px;
+                        color: #7F786C;
+    
+                    }
+                    #contact{
+                        font-family: SF Pro Display;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 32px;
+                        line-height: 38px;
+                        color: #FFFFFF;
+                    }
+
+                }
+                li:last-child{
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+    .content{
+        .pic_1{
+            padding-bottom: 30px;
+        }
+        .img-fluid{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.page-2{
+    padding-bottom: 200px;
+    .owner-info{
+        .pic_3{
+            background: none;
+            margin-left: 30px;
+        }
+        .img-fluid{
+            max-width: 100%;
+            height: auto;
+        }
+        .owner-description{
+            padding-bottom: 50px;
+            h1{
+                font-family: "Monaco";
+                font-style: normal;
+                font-weight: 900;
+                font-size: 36px;
+                line-height: 44px;
+                color: #7F786C;
+                padding-bottom: 18px;
+            }
+            .line{
+                border: 3px solid #AAAAAA;
+                margin-bottom: 18px;
+            }
+            p{
+                font-family: Monaco;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 28px;
+                line-height: 34px;
+                color: #FFFFFF;
+
+            }
+            
+        }
+        .python, .django{
+            background: rgba(211, 206, 200, 0.5);
+            border-radius: 20px;
+            padding: 56px 70px;
+            justify-content: center;
+            .python_img, .django_img{
+                text-align: center;
+                padding-bottom: 30px;
+            }
+            p{
+                text-align: center;
+                font-family: SF Pro Display;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                color: #7F786C;
+
+            }
+        }
+
+        
+    }
+}
+.page-3{
+    .form{
+        label{
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 26px;
+            color: #7F786C;
+        }
+        input{
+            width: 100%;
+            padding:  18px 20px;
+            background: #FFFFFF;
+            border-radius: 10px;
+            border: none;
+        }
+        .email_1{
+            padding-top: 20px;
+        }
+        .topic_1{
+            padding-top: 20px;
+        }
+        .topic_input{
+            padding: 100px 20px;
+        }
+    }
+    .button{
+        padding-top: 27px;
+        .btn{
+            width: 170px;
+            height: 64px;
+            background: #7F786C;
+            border-radius: 30px;
+
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            color: #FFFFFF;
+
+        }
+    }
+    .footer{
+        margin: 0% auto;
+        ul{
+            li{
+                padding-bottom: 19px;
+                
+                display: flex;
+                list-style: none;
+                text-decoration: none;
+                align-items: center;
+                a{
+
+                }
+                p{
+                    margin: auto 30px;
+                    font-family: Rubik;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 17px;
+                    letter-spacing: 0.05em;
+                    color: #7F786C;
+                }
+                .up{
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

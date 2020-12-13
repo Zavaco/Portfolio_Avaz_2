@@ -1,0 +1,63 @@
+{% load static %}
+{% load static i18n app_tags %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as languages %}
+
+{% block page1 %}
+
+<ul >
+           {% for language, title in languages %}
+           <li class="{% if LANGUAGE_CODE == language %}active{% endif %}" style="display: inline-block">
+          {% get_url_tag request=request lang=language as url %}
+             <a href="{{ url }}" class="link-head rot">{{ title }}</a>
+              {% endfor %}
+</ul>
+
+<div class="page-1">
+    <div class="header">
+            <div class="container">
+                <div class="row" >
+                    <div class="offset-md-7 col-md-5 " >
+                        <div class="menu ml-auto text-right" style="text-align: end;">
+                            <ul style="text-align: end;" >
+                                {% for el in menu %}
+                                {% if el.id == 1 %}
+                                <li><a id="work" href="#">{{ el.menu_name }}</a></li>
+                                {%  endif %}
+
+                                 {% if el.id == 2 %}
+                                <li><a id="about" href="#">{{ el.menu_name }}</a></li>
+                                {%  endif %}
+
+                                {% if el.id == 3 %}
+                                <li><a id="contact" href="#">{{ el.menu_name }}</a></li>
+                                {%  endif %}
+
+                                        {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+                        {% for el in page_info %}
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <img class="pic_1 img-fluid" src="{{ el.work_img1.url }}" alt="pic_1">
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="offset-md-3 col-md-9" style="text-align: end;">
+                        <img class="img-fluid" src="{{ el.work_img2.url }}" alt="pic_2">
+                    </div>
+                </div>
+            </div>
+                        {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}

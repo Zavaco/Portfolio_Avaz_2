@@ -1,0 +1,29 @@
+{% load static %}
+{% load static i18n app_tags %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as languages %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<ul >
+           {% for language, title in languages %}
+           <li class="{% if LANGUAGE_CODE == language %}active{% endif %}" style="display: inline-block">
+          {% get_url_tag request=request lang=language as url %}
+             <a href="{{ url }}" class="link-head rot">{{ title }}</a>
+              {% endfor %}
+</ul>
+
+<h1>{% trans 'Hi We Are Here' %}</h1>
+
+
+
+</body>
+</html>

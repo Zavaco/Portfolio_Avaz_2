@@ -1,0 +1,48 @@
+{% load static %}
+{% load static i18n app_tags %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as languages %}
+
+{% block page2 %}
+
+ <div class="page-2">
+        <div class="owner-info">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-md-5">
+                        {% for el in page_info %}
+
+                        <img class="img-fluid pic_3" src="{{ el.my_img.url }}" alt="owner">
+                    </div>
+                    <div class="offset-md-1 col-md-5">
+                        <div class="owner-description">
+                            <h1 class="">{{ el.my_name  }}</h1>
+                            <div class="line">
+
+                            </div>
+                            <p>{{ el.my_info }}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="python">
+                            <div class="python_img">
+                                <img  src="{{ el.icon.url }}" alt="phtghon">
+                            </div>
+                            <p>{{ el.icon_info }}</p>
+                        </div>
+                    </div>
+                    <div class="offset-md-2 col-md-5">
+                        <div class="django">
+                            <div class="django_img">
+                                <img src="{{ el.icon2.url }}" alt="django">
+                            </div>
+                            <p>{{ el.icon2_info }}</p>
+                        </div>
+                    </div>
+                                        {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

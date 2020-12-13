@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgba(227, 216, 200, 0.8);
+}
+
+@font-face {
+  body {
+    font-family: "elephant-regular";
+    src: url("https://dafonttop.com/wp-data/e/894/9894/file/Elephant-PersonalUse.otf") format("woff"), url("https://dafonttop.com/wp-data/e/894/9894/file/Elephant-PersonalUse.otf") format("opentype"), url("https://dafonttop.com/wp-data/e/894/9894/file/Elephant-PersonalUse.otf") format("truetype");
+  }
+}
+
+body span.font0 {
+  font-family: "elephant-regular";
+  font-size: 55px;
+  text-transform: none;
+}
+
+h1 {
+  font-size: 8vw;
+}
+
+.page-1 {
+  padding-top: 67px;
+  padding-bottom: 140px;
+}
+
+.page-1 .header {
+  padding-bottom: 42px;
+}
+
+.page-1 .header .menu {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-1 .header .menu ul {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0;
+  margin-left: auto;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-decoration: none;
+  list-style-type: none;
+  list-style: none;
+}
+
+.page-1 .header .menu ul li {
+  margin-right: 69px;
+  list-style: none;
+}
+
+.page-1 .header .menu ul li a {
+  text-decoration: none;
+}
+
+.page-1 .header .menu ul li #work {
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+
+.page-1 .header .menu ul li #about {
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  color: #7F786C;
+}
+
+.page-1 .header .menu ul li #contact {
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+
+.page-1 .header .menu ul li:last-child {
+  margin-right: 0px;
+}
+
+.page-1 .content .pic_1 {
+  padding-bottom: 30px;
+}
+
+.page-1 .content .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-2 {
+  padding-bottom: 200px;
+}
+
+.page-2 .owner-info .pic_3 {
+  background: none;
+  margin-left: 30px;
+}
+
+.page-2 .owner-info .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-2 .owner-info .owner-description {
+  padding-bottom: 50px;
+}
+
+.page-2 .owner-info .owner-description h1 {
+  font-family: "Monaco";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 44px;
+  color: #7F786C;
+  padding-bottom: 18px;
+}
+
+.page-2 .owner-info .owner-description .line {
+  border: 3px solid #AAAAAA;
+  margin-bottom: 18px;
+}
+
+.page-2 .owner-info .owner-description p {
+  font-family: Monaco;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 34px;
+  color: #FFFFFF;
+}
+
+.page-2 .owner-info .python, .page-2 .owner-info .django {
+  background: rgba(211, 206, 200, 0.5);
+  border-radius: 20px;
+  padding: 56px 70px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-2 .owner-info .python .python_img, .page-2 .owner-info .python .django_img, .page-2 .owner-info .django .python_img, .page-2 .owner-info .django .django_img {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.page-2 .owner-info .python p, .page-2 .owner-info .django p {
+  text-align: center;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #7F786C;
+}
+
+.page-3 .form label {
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  color: #7F786C;
+}
+
+.page-3 .form input {
+  width: 100%;
+  padding: 18px 20px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  border: none;
+}
+
+.page-3 .form .email_1 {
+  padding-top: 20px;
+}
+
+.page-3 .form .topic_1 {
+  padding-top: 20px;
+}
+
+.page-3 .form .topic_input {
+  padding: 100px 20px;
+}
+
+.page-3 .button {
+  padding-top: 27px;
+}
+
+.page-3 .button .btn {
+  width: 170px;
+  height: 64px;
+  background: #7F786C;
+  border-radius: 30px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.page-3 .footer {
+  margin: 0% auto;
+}
+
+.page-3 .footer ul li {
+  padding-bottom: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-3 .footer ul li p {
+  margin: auto 30px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  color: #7F786C;
+}
+
+.page-3 .footer ul li .up {
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,60 @@
+{% load static %}
+{% load static i18n app_tags %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as languages %}
+
+{% block page3 %}
+
+<div class="page-3">
+        <div class="form">
+            <form method="post">
+                {% csrf_token %}
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+
+                        {% for el in page_info %}
+
+                        <label>{{ el.f_name }}</label>
+                        {{ form.first_name }}
+                    </div>
+                    <div class="col-md-6">
+                        <label>{{ el.l_name }}</label>
+                        {{ form.last_name }}
+                    </div>
+                    <div class="col-md-12">
+                        <label class="email_1">{{ el.email }}</label>
+                        {{ form.client_email }}
+                    </div>
+                    <div class="col-md-12">
+                        <label class="topic_1">{{ el.message }}</label>
+                        {{ form.topic }}
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="btn" type="submit">{{ el.btn }}</button>
+                </div>
+                </form>
+                <div class="offset-md-4 col-md-3 footer">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="{{ el.gmail_icon.url }}" alt="mail"></a>
+                            <p>{{ el.gmail }}</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ el.ins_icon.url }}" alt="instagram"></a>
+                            <p class="up">{{ el.ins }}</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ el.tg_icon.url }}" alt="telegram"></a>
+                            <p class="up">{{ el.tg }}</p>
+
+                            {% endfor %}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
